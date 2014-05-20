@@ -1,0 +1,24 @@
+extends ../shared/template
+
+block content
+  h1= title
+
+  #user= user.email
+
+  #menu
+    form#order
+      input.qty(type='number', name='qty')
+      select.menu(name='menu')
+        option Select a Menu
+          each menu in menus
+            option= menu
+
+      select.dish(name='dish')
+        option Select a Dish
+
+
+    div
+      button#add Add Row
+
+block scripts
+  script(src='/js/es6/compiled/orders.js')

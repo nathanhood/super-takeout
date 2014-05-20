@@ -1,0 +1,11 @@
+{"name":"bacon", "menu":"breakfast", "cost":2.50, "calories":125}
+{"name":"eggs", "menu":"breakfast", "cost":1.50, "calories":80}
+{"name":"pancakes", "menu":"breakfast", "cost":2.00, "calories":150}
+{"name":"sausage", "menu":"breakfast", "cost":1.25, "calories":125}
+{"name":"blt", "menu":"lunch", "cost":3.15, "calories":125}
+{"name":"ham sandwich", "menu":"lunch", "cost":3.35, "calories":150}
+{"name":"potatoe chips", "menu":"lunch", "cost":1.50, "calories":200}
+{"name":"hamburger", "menu":"dinner", "cost":4.00, "calories":400}
+{"name":"french fries", "menu":"dinner", "cost":2.50, "calories":300}
+{"name":"chicken", "menu":"dinner", "cost":4.50, "calories":250}
+{"name":"steak", "menu":"dinner", "cost":8.00, "calories":450}
