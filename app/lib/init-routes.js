@@ -26,7 +26,9 @@ function load(app, fn){
   app.post('/login', dbg, users.login);
 
   app.get('/orders', dbg, orders.new);
+  app.post('/orders', dbg, orders.create);
   app.get('/orders/addmenu', dbg, orders.addMenu);
+  app.get('/orders/confirm', dbg, orders.confirmOrder);
 
   app.get('/dishes/:menu', dbg, dishes.menu);
 

@@ -1,24 +1,31 @@
 extends ../shared/template
 
 block content
-  h1= title
 
-  #user= user.email
+
+  #user Welcome #{user.email}!
 
   #menu
-    form#order
-      input.qty(type='number', name='qty')
-      select.menu(name='menu')
-        option Select a Menu
-          each menu in menus
-            option= menu
-
-      select.dish(name='dish')
-        option Select a Dish
-
-
     div
       button#add Add Row
+    form#order(action='/orders', method='post')
+      .menu-item
+        input.qty(type='number', name='qty')
+        select.menu
+          option Select a Menu
+            each menu in menus
+              option= menu
+
+        select.dish(name='dishId')
+          option Select a Dish
+        button#remove-item Remove
+      button.button.button-action#submit-order Submit Order
+    #totals
+
+
+
+
+
 
 block scripts
   script(src='/js/es6/compiled/orders.js')

@@ -1,8 +1,10 @@
-input.qty(type='number', name='qty')
-select.menu(name='menu')
-  option Select a Menu
-    each menu in menus
-      option= menu
+.menu-item
+  input.qty(type='number', name='qty')
+  select.menu
+    option Select a Menu
+      each menu in menus
+        option= menu
 
-select.dish(name='dish')
-  option Select a Dish
+  select.dish(name='dishId')
+    option Select a Dish
+  button#remove-item Remove

@@ -1,2 +1,3 @@
+option Select a Dish
 each dish in dishes
-  option(value='#{dish._id}')= dish.name
+  option(data-cost=dish.cost, data-cal=dish.calories, value='#{dish._id}')= dish.name

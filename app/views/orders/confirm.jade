@@ -1,0 +1,17 @@
+extends ../shared/template
+
+block content
+
+
+  #receipt
+    #user Thank You #{user.email}!
+    #order-id Order Number: #{order._id}
+    .total Total: $#{order.cost}
+
+
+
+
+
+
+block scripts
+  script(src='/js/es6/compiled/orders.js')

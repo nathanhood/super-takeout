@@ -7,6 +7,14 @@ html
     link(href='/css/buttons.css', rel='stylesheet')
     link(href='/less/app.css', rel='stylesheet')
   body
+    nav
+      h1 Super Take-Out
+      a.button.button-border#home(href='/') Home
+      a.button.button-border(href='/login') Login
+      a.button.button-border(href='/orders') Place Order
+      a.button.button-border(href='/orders/past') Past Orders
+      a.button.button-border(href='/help') Help
+
     block content
 
     script(src='/js/vendor/jquery-2.1.1.js')
